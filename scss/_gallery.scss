@@ -1,0 +1,43 @@
+.gallery {
+  padding-top: 2.5em;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1em;
+
+
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+
+      &-item {
+        img {
+          object-fit: cover;
+          display: block;
+          transition: all 0.5s;
+
+        }
+
+        transition: all 0.5s;
+        z-index: 4555;
+
+        &:hover {
+          transform: scale(1.075);
+          z-index: 2;
+        }
+
+
+
+
+      }
+    }
+  }
+}
